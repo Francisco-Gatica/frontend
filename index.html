@@ -3,47 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BancoSeguro - Tu Confianza Financiera</title>
+    <title>PyCamp - Cursos de Python</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/logo_empresa.ico" type="image/png">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="container">
-                <div class="logo">BancoSeguro</div>
+                <div class="logo-container">
+                    <img src="img/logo_empresa.png" alt="Logo de MagentaSoftware" class="Logo" width="50" height="50">
+                    <div class="logo">
+                        <span class="highlighted">Magenta</span>Software<sup class="logo-trademark">&copy;</sup>
+                    </div>
+                </div>
+                <input type="checkbox" id="menu-check">
+                <label for="menu-check" class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
                 <ul class="nav-links">
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#" id="nav-login" style="font-weight: bold; border-bottom: 2px solid var(--magenta_5);">Iniciar Sesión</a></li>
                 </ul>
             </div>
         </nav>
-    </header>
+    </header>    
 
     <main>
-        <section class="hero">
+        <section class="hero" id="inicio">
             <div class="container">
-                <h1>Bienvenido a BancoSeguro</h1>
-                <p>Tu solución financiera de confianza</p>
-                <button class="btn">Abrir Cuenta</button>
+                <h1><span class="backgr-text">¡Bienvenid@s a PyCamp!</span></h1>
+                <p><span class="backgr-text">Cursos de Python Gratuitos</span></p>
+                <button class="btn" id="btn-empecemos">¡Empecemos!</button>
             </div>
         </section>
 
         <section class="servicios" id="servicios">
             <div class="container">
-                <h2>Nuestros Servicios</h2>
+                <h1>Nuestros Servicios</h1>
+                
                 <div class="services-grid">
                     <div class="service-card">
-                        <h3>Cuentas Corrientes</h3>
-                        <p>Gestiona tus finanzas con facilidad</p>
+                        <h3>Cursos de Python</h3>
+                        <p>Aprende Python desde cero</p>
                     </div>
                     <div class="service-card">
-                        <h3>Créditos</h3>
-                        <p>Financiamiento a tu medida</p>
+                        <h3>Cursos de Python Avanzado</h3>
+                        <p>Domina los conceptos avanzados de Python</p>
                     </div>
                     <div class="service-card">
-                        <h3>Inversiones</h3>
-                        <p>Haz crecer tu patrimonio</p>
+                        <h3>Cursos de Python para Niños</h3>
+                        <p>Introduce a los más pequeños al mundo de la programación</p>
                     </div>
                 </div>
             </div>
@@ -51,15 +65,15 @@
 
         <section class="contacto" id="contacto">
             <div class="container">
-                <h2>Contactanos</h2>
-                <p>Teléfono: +1 234 567 8900</p>
-                <p>Email: info@bancoseguro.com</p>
+                <h2>Contáctanos</h2>
+                <p>Teléfono: +56 2 1313 4954</p>
+                <p>Email: infopycamp@magentasoftware.cl</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 BancoSeguro. Todos los derechos reservados.</p>
+        <p>&copy; 2026 MagentaSoftware. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
