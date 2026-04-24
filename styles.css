@@ -166,6 +166,13 @@ header {
     box-shadow: 0 8px 12px rgba(0,0,0,0.15);
 }
 
+
+
+footer {
+    background-color: var(--magenta_2); 
+    color: var(--magenta_3);
+    text-align: center;
+    padding: 1.5rem 0;
 .contacto {
     background-color: var(--magenta_1);
     color: var(--blanco);
@@ -181,12 +188,6 @@ header {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
-
-footer {
-    background-color: var(--magenta_2); 
-    color: var(--magenta_3);
-    text-align: center;
-    padding: 1.5rem 0;
 }
 
 @media (max-width: 768px) {
