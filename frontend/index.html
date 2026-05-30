@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyCamp - Cursos de Python</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/logo_empresa.ico" type="image/png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo-container">
+                    <img src="img/logo_empresa.png" alt="Logo de MagentaSoftware" class="Logo" width="50" height="50">
+                    <div class="logo">
+                        <span class="highlighted">Magenta</span>Software<sup class="logo-trademark">&copy;</sup>
+                    </div>
+                </div>
+                <input type="checkbox" id="menu-check">
+                <label for="menu-check" class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>    
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="container">
+                <h1><span class="backgr-text">¡Bienvenid@s a PyCamp!</span></h1>
+                <p><span class="backgr-text">Cursos de Python Gratuitos</span></p>
+                <button class="btn" id="btn-empecemos">¡Empecemos!</button>
+            </div>
+        </section>
+        <section id="modal-formulario" class="formulario">
+            <div class="container">
+                <button class="btn-cerrar-form">&times;</button>
+                <h2>Solicita más información</h2>
+                <form id="formulario" action="#" method="POST" novalidate>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" placeholder="ej. Leoponcio" id="nombre" name="nombre">
+                    <label for="apellidos">Apellidos: </label>
+                    <input type="text" placeholder="ej. Medina Sos" id="apellidos" name="apellidos">
+                    <label for="email">Correo Electrónico: </label>
+                    <input type="email" placeholder="ej. correo@electronico.cl" id="email" name="email">
+                    <label for="telefono">Teléfono: </label>
+                    <input type="tel" placeholder="ej. +56912545489" id="telefono" name="telefono">
+                    <div id="errores" style="color: #ff4d4d; margin-top: 1rem; font-weight: bold; text-align: left;"></div>
+                    <button type="submit" class="btn-enviar-form">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <section class="servicios" id="servicios">
+            <div class="container">
+                <h1>Nuestros Servicios</h1>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Cursos de Python</h3>
+                        <p>Aprende Python desde cero</p>
+                        <a href="javascript:void(0)" class="btn-service-grid btn-mostrar-info">Saber Más</a>
+                    </div>
+                    <div class="service-card">
+                        <h3>Cursos de Python Avanzado</h3>
+                        <p>Domina los conceptos avanzados de Python</p>                        
+                        <a href="javascript:void(0)" class="btn-service-grid btn-mostrar-info">Saber Más</a>
+                    </div>
+                    <div class="service-card">
+                        <h3>Cursos de Python para Niños</h3>
+                        <p>Introduce a los más pequeños al mundo de la programación</p>
+                        <a href="javascript:void(0)" class="btn-service-grid btn-mostrar-info">Saber Más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto" class="contacto">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <p>Teléfono: +56 2 1313 4954</p>
+            <p>Email: infopycamp@magentasoftware.cl</p>
+            <br>
+            <p style="font-size: 0.9rem;">&copy; 2026 MagentaSoftware. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
